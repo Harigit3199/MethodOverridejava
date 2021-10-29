@@ -9,7 +9,7 @@ class Students
         Name="Hari";
         Rollno = 25;
         Subject= "Maths";
-        Marks= 70;
+        Marks= 78;
 
 
         System.out.println("Name of the student: " + Name);
