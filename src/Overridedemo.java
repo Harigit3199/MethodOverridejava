@@ -1,53 +1,48 @@
-class Students
+class Phone
 {
-    String Name ,Subject;
-    int Rollno;
-    int Marks;
+    String brand_model, features;
+    double price;
 
-    public void studentName()
+    public void mobileCompany()
     {
-        Name="Hari";
-        Rollno = 25;
-        Subject= "Maths";
-        Marks= 78;
-
-
-        System.out.println("Name of the student: " + Name);
-        System.out.println("Roll number of the student: "+Rollno);
-        System.out.println("Name of the Subject: " +Subject);
-        System.out.println("Subject Marks: "+ Marks);
+        brand_model="Samsung s21";
+        features="108 Megapixel";
+        price=90000.99;
+        System.out.println("Which model: "+brand_model);
+        System.out.println("Main feature: "+ features);
+        System.out.println("Price of the phone:"+price);
         System.out.println( );
     }
-
 }
-class Student1 extends Students
+class iPhone extends Phone
 {
-    String Name ,Subject;
-    int Rollno;
-    int Marks;
+    @Override
+    public void mobileCompany() {
 
-    public void studentName()
-    {
-        Name="Haran";
-        Rollno = 40;
-        Subject= "Computer Science";
-        Marks= 70;
+         brand_model="iPhone 13 pro max";
+         features= "12 Megapixel with Slow motion HDR Camera";
+         price=124000.99;
 
+        System.out.println("Which model: "+ brand_model);
+        System.out.println("Best feature: "+ features);
+        System.out.println("Mobile price: "+ price+" RS");
 
-        System.out.println("Name of the student: "+ Name);
-        System.out.println("Roll number of the student: "+Rollno);
-        System.out.println("Name of the Subject: " + Subject);
-        System.out.println("Subject Marks: "+ Marks);
+        System.out.println(brand_model+ " has the best camera features with highest price");
+
     }
-
 }
 public class Overridedemo
 {
     public static void main(String[] args)
     {
-        Students details= new Students();
-        Student1 detail= new Student1();
-        details.studentName();
-        detail.studentName();
+        Phone ph=new Phone();
+        ph.mobileCompany();
+
+        Phone ios = new iPhone();
+        ios.mobileCompany();
+
+
+
+
     }
 }
