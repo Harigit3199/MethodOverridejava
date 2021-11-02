@@ -35,13 +35,9 @@ public class Overridedemo
 {
     public static void main(String[] args)
     {
-        Phone ph=new Phone();
-        ph.mobileCompany();
-
+       
         Phone ios = new iPhone();
         ios.mobileCompany();
-
-
 
 
     }
